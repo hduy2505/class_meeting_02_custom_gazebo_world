@@ -29,7 +29,7 @@ class Follower:
                 self.twist.linear.x = 0
             else:
                 self.twist.angular.z = 1
-                if self.range_ahead == self.front_distance:
+                if self.range_ahead == self.front_distance: #detect if the object is at the front 
                     self.twist.linear.x = 0.5
                     self.twist.angular.z = 0
                 
