@@ -16,7 +16,7 @@ class SquareBot:
 
     def turn(self, time):
         self.twist.linear.x = 0.0
-        self.twist.angular.z = pi/2 
+        self.twist.angular.z = pi/2 # tunr the robot 90 degree 
         self.cmd_vel_pub.publish(self.twist)
         rospy.sleep(time)
 
@@ -30,10 +30,10 @@ class SquareBot:
         rate = rospy.Rate(10)
         while not rospy.is_shutdown():
             for _ in range(4): # repeat four times
-                self.move_forward(5) 
+                self.move_forward(5) #move in 5 seconds
                 self.stop() 
                 rospy.sleep(1) 
-                self.turn(1) 
+                self.turn(1)  #turn 90 degrees 
                 self.stop() 
                 rospy.sleep(1) 
             rate.sleep()
