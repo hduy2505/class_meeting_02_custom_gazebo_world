@@ -31,5 +31,3 @@ With more time, improvements would include enhancing the precision of movements,
 ## Takeaways
 - **Testing and Iteration:** Frequent testing and iteration are crucial for refining robot behaviors. Each test provided insights that guided the next round of improvements.
 - **Sensor Reliability:** Ensuring sensor reliability is key to consistent robot performance. This project highlighted the importance of calibrating and maintaining sensors.
-
-```
