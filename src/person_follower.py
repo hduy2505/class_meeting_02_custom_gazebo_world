@@ -28,7 +28,7 @@ class Follower:
             if self.range_ahead < 0.8: # person is too close
                 self.twist.linear.x = 0
             else:
-                self.twist.angular.z = 1
+                self.twist.angular.z = 0.5
                 if self.range_ahead == self.front_distance: #detect if the object is at the front 
                     self.twist.linear.x = 0.5
                     self.twist.angular.z = 0

@@ -15,14 +15,14 @@ class WallFollower:
         # Assume the wall is on the right
         front_distance = min(msg.ranges[0:30] + msg.ranges[330:359])
         right_distance = min(msg.ranges[60:120])
-        print(front_distance)
-        print(right_distance)
+        #print(front_distance)
+        #print(right_distance)
 
         # Control logic to follow the wall
         if front_distance < 0.3:  # Too close to the wall in front
             self.twist.linear.x = 0.1
             self.twist.angular.z = pi/4  # Turn left
-        elif right_distance > 0.2:  # Too far from the wall on the right
+        elif right_distance > 0.3:  # Too far from the wall on the right
             self.twist.linear.x = 0.1
             self.twist.angular.z = -0.3  # Turn right
         else:  # Just right
