@@ -27,6 +27,8 @@ In programming these robot behaviors, the main challenges included sensor calibr
 
 ## Future Work
 With more time, improvements would include enhancing the precision of movements, optimizing the algorithms for faster response times, and integrating machine learning for better performance.
+## Personal note 
+Because the robot behavior in gazebo simulator is different from the real world. So there are two additional scripts caled person_follower_real and wall_follower_real for the turtlebot3 to run in real world
 
 ## Takeaways
 - **Testing and Iteration:** Frequent testing and iteration are crucial for refining robot behaviors. Each test provided insights that guided the next round of improvements.
